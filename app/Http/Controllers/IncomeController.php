@@ -25,7 +25,7 @@ class IncomeController extends Controller
      */
     public function create()
     {
-        //
+        return view('income.create');
     }
 
     /**
