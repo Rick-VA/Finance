@@ -7,6 +7,14 @@
     <title>Pecunia - @yield('title')</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
+<nav class="mainnav">
+    <img src="images/logo finance.png" alt="logo" class="logo-img">
+    <a class="nav-a" href="/">home</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="nav-a" href="/login">login</a>
+
+</nav>
 <body class="@yield('bodyclass')">
     @yield('body')
     
