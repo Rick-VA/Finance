@@ -3,7 +3,7 @@
         <x-slot name="logo">
             <div class="loginlogo">
 
-                <img src="images/logo finance.png" alt="logo" class="login-logo">
+                <img src="images/logo-finance-login.png" alt="logo" class="login-logo">
 
             </div>
         </x-slot>

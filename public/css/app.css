@@ -1673,8 +1673,8 @@ select {
 }
 
 .login-logo {
-    margin-top: -33vw;
-    margin-left: -10vw;
+    margin-top: -55vw;
+    margin-left: -21vw;
     max-width: 600px;
     max-height: auto;
     object-fit: contain;
@@ -1683,4 +1683,11 @@ select {
 
 .loginlogo {
     position: relative;
+}
+
+.dash-logo {
+    margin-top: -12px;
+    max-width: 330px;
+    max-height: auto;
+    object-fit: contain;
 }
