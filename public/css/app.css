@@ -1673,8 +1673,8 @@ select {
 }
 
 .login-logo {
-    margin-top: -55vw;
-    margin-left: -21vw;
+    margin-top: -850px;
+    margin-left: -300px;
     max-width: 600px;
     max-height: auto;
     object-fit: contain;
