@@ -14,10 +14,20 @@
     <a class="nav-a" href="/">home</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a class="nav-a" href="/login">login</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="nav-a" href="/register">register</a>
 
 </nav>
 <body class="@yield('bodyclass')">
     @yield('body')
-    
+    hallo <br> welkom <br> op <br> deze <br> mooie <br> website
+
 </body>
+
+<footer>
+    <a href="/terms-of-service" class="footer-a">terms-of-service</a>,
+    <a href="/privacy-policy" class="footer-a">privacy-policy</a>
+<br>
+    © 2022 <a href="/" class="footer-a">Finance</a>.  All rights reserved.
+</footer>
 </html>
