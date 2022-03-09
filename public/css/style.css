@@ -39,6 +39,7 @@ strong {
 }
 
 .logo-img {
+    margin-left: -150px;
     margin-top: 160px;
     max-width: 180px;
     max-height: auto;
@@ -222,7 +223,7 @@ section h1 {
 
 .sectionlogo {
     margin-top: 70px;
-    margin-left: 600px;
+    margin-left: 560px;
     max-width: 300px;
     max-width: auto;
     object-fit: contain;

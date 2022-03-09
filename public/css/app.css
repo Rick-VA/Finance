@@ -2618,5 +2618,5 @@ ol ol):not(:where([class~="not-prose"] *)) {
     max-width: 400px;
     max-height: 400px;
     object-fit: contain;
-    margin-top: -10px;
+    margin-top: -50px;
 }

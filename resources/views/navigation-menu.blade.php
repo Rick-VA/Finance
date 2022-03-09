@@ -40,7 +40,7 @@
                                     <!-- Team Management -->
                                     <div class="block px-4 py-2 text-xs text-gray-400">
                                         {{ __('Manage Team') }}
-                                    </div>
+                                    </div>c
 
                                     <!-- Team Settings -->
                                     <x-jet-dropdown-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}">
