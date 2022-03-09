@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
 
 <nav class="mainnav">
     <img src="images/logo finance.png" alt="logo" class="logo-img">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a class="nav-a" href="/">home</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a class="nav-a" href="/login">login</a>
@@ -20,7 +22,6 @@
 </nav>
 <body class="@yield('bodyclass')">
     @yield('body')
-    hallo <br> welkom <br> op <br> deze <br> mooie <br> website
 
 </body>
 
