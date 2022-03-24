@@ -2613,10 +2613,21 @@ ol ol):not(:where([class~="not-prose"] *)) {
     max-height: auto;
     object-fit: contain;
 }
-.menulogo {
 
+.menulogo {
     max-width: 400px;
     max-height: 400px;
     object-fit: contain;
-    margin-top: -50px;
+    margin-top: -335px;
+    margin-left: -100px;
+}
+
+.income {
+    margin-left: 10px;
+}
+
+.time {
+    margin-left: 100px;
+    font-weight: bolder;
+    float: right;
 }
