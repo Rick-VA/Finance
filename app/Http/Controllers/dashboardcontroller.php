@@ -13,6 +13,6 @@ class dashboardcontroller extends Controller
 
     public function store(Request $request)
     {
-     //   
+        
     }
 }
