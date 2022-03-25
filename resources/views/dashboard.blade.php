@@ -31,10 +31,32 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="income">
                     <strong>&nbsp; Add your income and expenses</strong>
-                    <form action="/index"  method="POST">
-                        <input type="text" placeholder="category">
-                        <input type="number" placeholder="income/expenses">
-                        <input type="date">
+                    <form>
+                        @csrf
+                        <label for="category"></label>
+                        <select name="category" id="category" required>
+                            <option value="" disabled selected>Choose a category</option>
+                            <option value="income" disabled>->Income<-</option>
+                            <option value="salary">Salary</option>
+                            <option value="investments">Investments</option>
+                            <option value="gifts">Gifts</option>
+                            <option value="allowance">Allowance/Pocket Money</option>
+                            <option value="government payments">Government Payments</option>
+                            <option value="expenses" disabled>->Expenses<-</option>
+                            <option value="housing">Housing</option>
+                            <option value="trasportation">Transportation</option>
+                            <option value="food">Food</option>
+                            <option value="utilities">Utilities</option>
+                            <option value="insurance ">Insurance </option>
+                            <option value="medical & healthcare">Medical & Healthcare</option>
+                            <option value="savings">Saving, Investing, & Debt Payments</option>
+                            <option value="personal spending">Personal Spending</option>
+                            <option value="recreation & entertainment">Recreation & Entertainment</option>
+                            <option value="miscellaneous">Miscellaneous</option>
+                        </select>
+                        <input type="number" placeholder="income/expenses" name="income/expenses" required>
+                        <input type="date" name="date" required>
+                        <input type="submit" value="&nbsp;Enter&nbsp;" class="incomesub">
 
                     </form>
                 </div>

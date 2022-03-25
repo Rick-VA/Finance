@@ -2631,3 +2631,9 @@ ol ol):not(:where([class~="not-prose"] *)) {
     font-weight: bolder;
     float: right;
 }
+
+.incomesub {
+    border: 1px #6b7280 solid;
+    cursor: pointer;
+    height: 41px;
+}
