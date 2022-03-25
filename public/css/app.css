@@ -1210,7 +1210,6 @@ ol ol):not(:where([class~="not-prose"] *)) {
 
 .ml-3 {
     margin-left: 0.75rem;
-    color: black;
 }
 
 .-ml-px {
