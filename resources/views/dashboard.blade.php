@@ -22,7 +22,7 @@
     if ($time >= "19") {
         echo "Good night";
     }
-    ?>&nbsp;{{ Auth::user()->name }}</div> 
+    ?>&nbsp;{{ Auth::user()->name }}</div>
         </h2>
     </x-slot>
 
@@ -31,7 +31,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="income">
                     <strong>&nbsp; Add your income and expenses</strong>
-                    <form>
+                    <form action="/income" method="post">
                         @csrf
                         <label for="category"></label>
                         <select name="category" id="category" required>
