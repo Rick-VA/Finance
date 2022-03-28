@@ -2641,6 +2641,5 @@ ol ol):not(:where([class~="not-prose"] *)) {
     cursor: pointer;
     height: 41px;
     float: right;
-
-
+    margin-right: 10px ;
 }
