@@ -475,7 +475,7 @@ select {
     -moz-appearance: none;
     appearance: none;
     background-color: #fff;
-    border-color: #6b7280;
+    border-color: black;
     border-width: 1px;
     border-radius: 0px;
     padding-top: 0.5rem;
@@ -1210,6 +1210,8 @@ ol ol):not(:where([class~="not-prose"] *)) {
 
 .ml-3 {
     margin-left: 0.75rem;
+
+
 }
 
 .-ml-px {
@@ -1218,10 +1220,12 @@ ol ol):not(:where([class~="not-prose"] *)) {
 
 .mt-5 {
     margin-top: 1.25rem;
+
 }
 
 .mt-6 {
     margin-top: 1.5rem;
+
 }
 
 .-mr-1 {
@@ -1990,7 +1994,7 @@ ol ol):not(:where([class~="not-prose"] *)) {
 
 .text-gray-500 {
     --tw-text-opacity: 1;
-    color: rgb(107 114 128 / var(--tw-text-opacity));
+    color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -2636,4 +2640,7 @@ ol ol):not(:where([class~="not-prose"] *)) {
     border: 1px #6b7280 solid;
     cursor: pointer;
     height: 41px;
+    float: right;
+
+
 }
