@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Income extends Model
 {
-    use HasFactory;
+    protected $table = 'income';
+    protected $primaryKey = 'id';
+    public $timestamps = false;
+    protected $connection = 'sqlite';
+    protected $attributes = [
+        'delayed' => false,
+    ];
+
 }

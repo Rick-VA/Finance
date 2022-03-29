@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('/', \App\Http\Controllers\WelcomeController::class );
 
 Route::get('/dashboard', function () {
     return view('dashboard');
