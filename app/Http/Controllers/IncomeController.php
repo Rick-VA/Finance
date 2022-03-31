@@ -15,7 +15,7 @@ class IncomeController extends Controller
      */
     public function index()
     {
-        
+
 
         return view('dashboard');
     }
@@ -27,7 +27,7 @@ class IncomeController extends Controller
      */
     public function create()
     {
-        return view('income.create');
+        return view('dashboard');
     }
 
     /**
@@ -38,7 +38,13 @@ class IncomeController extends Controller
      */
     public function store(StoreIncomeRequest $request)
     {
-        //
+        $amount = $request->amount;
+        $user = Auth::user()->id;
+        $category_id = (int)$request->category;
+        $date = $request->date;
+        $data = ['income/expenses'=>$amount, 'category_id'=>$category_id,'date'=>$date,'user_id'=>$user];
+        Bankstatement::create($data);
+        echo "Transactie opgeslagen!";
     }
 
     /**
