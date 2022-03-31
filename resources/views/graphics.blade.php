@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Graphics') }}  <div class="time"> <?php
+            {{ __('Graphs') }}  <div class="time"> <?php
                 /* This sets the $time variable to the current hour in the 24 hour clock format */
                 $time = date("H");
                 /* Set the $timezone variable to become the current timezone */
