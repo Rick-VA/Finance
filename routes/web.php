@@ -14,13 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('/', \App\Http\Controllers\WelcomeController::class );
+Route::resource('/income', \App\Http\Controllers\IncomeController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/Graphs', function () {
+Route::get('/graphs', function () {
     return view('Graphs');
 })->middleware(['auth'])->name('Graphs');
+
+Route::get('/categories', function () {
+    return view('categories');
+})->middleware(['auth'])->name('categories');
 
 require __DIR__.'/auth.php';
