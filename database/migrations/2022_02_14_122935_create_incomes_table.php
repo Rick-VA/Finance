@@ -18,7 +18,7 @@ class CreateIncomesTable extends Migration
             $table->integer('user_id');
             $table->integer('category_id');
             $table->dateTime('date');
-            $table->double('income/expenses')
+            $table->double('income/expenses');
             $table->timestamps();
         });
     }
