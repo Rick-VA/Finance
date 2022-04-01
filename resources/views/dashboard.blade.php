@@ -40,7 +40,7 @@
                         <input type="number" placeholder="income/expenses" name="income/expenses" required>
                         <input type="date" name="date" required>
                         <input type="submit" value="&nbsp;Enter&nbsp;" class="incomesub">
-
+                        <a href="/categories" class="categories">&nbsp;Create Categorie&nbsp;</a>
                     </form>
                 </div>
             </div>
