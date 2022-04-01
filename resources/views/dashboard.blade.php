@@ -31,9 +31,9 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="income">
                     <strong>&nbsp; Add your income and expenses</strong>
-                    <form action="/income" method="post">
+                    <form action="/dashboard" method="post">
                         @csrf
-                        <label for="category"></label>
+                        <label name="category" for="category"></label>
                         <select name="category" id="category" required>
                             <option value="" disabled selected>Choose a category</option>
                         </select>

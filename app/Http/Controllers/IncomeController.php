@@ -45,6 +45,8 @@ class IncomeController extends Controller
         $data = ['income/expenses'=>$amount, 'category_id'=>$category_id,'date'=>$date,'user_id'=>$user];
         Bankstatement::create($data);
         echo "Transactie opgeslagen!";
+
+        return view('dashboard')
     }
 
     /**
