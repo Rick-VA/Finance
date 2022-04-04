@@ -36,6 +36,7 @@
                         <label name="category" for="category"></label>
                         <select name="category" id="category" required>
                             <option value="" disabled selected>Choose a category</option>
+                            <option value="income">income</option>
                         </select>
                         <input type="number" placeholder="income/expenses" name="income/expenses" required>
                         <input type="date" name="date" required>

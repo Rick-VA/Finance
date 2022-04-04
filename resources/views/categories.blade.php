@@ -7,7 +7,7 @@
                 /* Set the $timezone variable to become the current timezone */
                 $timezone = date("e");
                 /* If the time is less than 1200 hours, show good morning */
-                if ($time < "12") {
+                if ($time < "11") {
                     echo "Good morning";
                 } else
                     /* If the time is grater than or equal to 1200 hours, but less than 1700 hours, so good afternoon */
@@ -25,6 +25,19 @@
                 ?>&nbsp;{{ Auth::user()->name }}</div>
         </h2>
     </x-slot>
-
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                <div class="category-body">
+                    <strong>&nbsp;add a new category</strong>
+                    <form method="get">
+                        @csrf
+                        <input type="text" placeholder="Name" required>
+                        <input type="submit" value="&nbsp;Enter&nbsp;" class="category">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </x-app-layout>
