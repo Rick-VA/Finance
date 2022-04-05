@@ -1,7 +1,10 @@
+<body class="login">
 <x-guest-layout>
+    <img src="images/background.jpg" alt="background" class="background">
+
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <img src="images/logo-finance-login.png" alt="logo" class="logo">
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -58,3 +61,4 @@
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>
+</body>

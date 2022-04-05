@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link rel="icon" href="images/icon-finance.png">
 
         <title>Finance</title>
 
@@ -42,5 +43,13 @@
         @stack('modals')
 
         @livewireScripts
+
+        <footer>
+            <a href="/terms-of-service" class="footer-a">terms-of-service</a>,
+            <a href="/privacy-policy" class="footer-a">privacy-policy</a>
+            <br>
+            © 2022 <a href="/" class="footer-a">Finance</a>.  All rights reserved.
+        </footer>
     </body>
+
 </html>
