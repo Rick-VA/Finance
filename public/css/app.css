@@ -2684,4 +2684,7 @@ footer {
     cursor: pointer;
     text-decoration: underline;
 }
-
+.py-122{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
