@@ -30,9 +30,9 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="category-body">
                     <strong>&nbsp;add a new category</strong>
-                    <form method="get">
+                    <form action="/add" method="POST">
                         @csrf
-                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Name" name="name" required>
                         <input type="submit" value="&nbsp;Enter&nbsp;" class="category">
                     </form>
                 </div>

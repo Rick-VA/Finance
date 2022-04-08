@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('/', \App\Http\Controllers\WelcomeController::class );
 Route::resource('/dashboard', \App\Http\Controllers\IncomeController::class);
+Route::resource('/add', \App\Http\Controllers\CategoryController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -27,5 +28,4 @@ Route::get('/graphs', function () {
 Route::get('/categories', function () {
     return view('categories');
 })->middleware(['auth'])->name('categories');
-
 require __DIR__.'/auth.php';

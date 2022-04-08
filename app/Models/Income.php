@@ -11,13 +11,7 @@ foreach (Income::all() as $income){
 
 class Income extends Model
 {
-    protected $table = 'income';
-    protected $primaryKey = 'id';
-    public $timestamps = false;
-    protected $connection = 'sqlite';
-    protected $attributes = [
-        'delayed' => false,
-    ];
+    protected $fillable;
 
 
 
