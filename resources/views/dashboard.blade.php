@@ -31,18 +31,21 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="income">
                     <strong>&nbsp; Add your income and expenses</strong>
-                    <form action="" method="post">
+                    <form action="/new" method="post">
                         @csrf
                         <label name="category" for="category"></label>
-                        <input type="text" placeholder="name" required>
+                        <input type="text" placeholder="name" name="name" required>
                         <select name="category" id="category" required>
                             <option value="" disabled selected>Choose a category</option>
-                            <option value="income">income</option>
+                            @foreach(Auth::user()->categories as $category)
+                                <option value="{{$category->id}}">{{$category->name}}</option>
+                            @endforeach
                         </select>
-                        <input type="number" placeholder="income/expenses" name="income/expenses" id="price" required>
+                        <input type="number" placeholder="income/expenses" name="income" id="income" required>
                         <input type="date" name="date" required>
                         <input type="submit" value="&nbsp;Save&nbsp;" class="incomesub">
                         <a href="/categories" class="categories">&nbsp;Create Categories&nbsp;</a>
+
                     </form>
                 </div>
             </div>

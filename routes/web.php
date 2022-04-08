@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/', \App\Http\Controllers\WelcomeController::class );
 Route::resource('/dashboard', \App\Http\Controllers\IncomeController::class);
 Route::resource('/add', \App\Http\Controllers\CategoryController::class);
+Route::resource('/new', \App\Http\Controllers\IncomeController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

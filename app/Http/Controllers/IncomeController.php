@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Income;
 use App\Http\Requests\StoreIncomeRequest;
 use App\Http\Requests\UpdateIncomeRequest;
+use Illuminate\Support\Facades\Auth;
 
 class IncomeController extends Controller
 {
@@ -38,11 +39,12 @@ class IncomeController extends Controller
      */
     public function store(StoreIncomeRequest $request)
     {
-        $amount = $request->amount;
-//        $user = Auth::user()->id;
-        $category_id = (int)$request->category;
+        $name = $request->name;
+        $user = Auth::user()->id;
+        $income = $request->income;
+        $category = $request->category;
         $date = $request->date;
-        $data = ['income/expenses'=>$amount, 'category_id'=>$category_id,'date'=>$date];
+        $data = ['name'=>$name, 'user_id'=>$user, 'category'=>$category, 'income'=>$income, 'date'=>$date,];
         Income::create($data);
         echo "Transactie opgeslagen!";
 
