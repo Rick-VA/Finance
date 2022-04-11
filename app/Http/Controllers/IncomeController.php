@@ -16,10 +16,9 @@ class IncomeController extends Controller
      */
     public function index()
     {
+
         $incomes = Auth::user()->incomes;
-        foreach (income::all()as $income){
-            echo $income->name;
-        }
+
         return view('dashboard')->with(['incomes'=>$incomes]);
     }
 
@@ -50,7 +49,7 @@ class IncomeController extends Controller
         Income::create($data);
         echo "Transactie opgeslagen!";
 
-        return view('dashboard');
+        return redirect(route('dashboard.index'));
     }
 
     /**
@@ -69,7 +68,7 @@ class IncomeController extends Controller
         foreach ($income as $incomes){
             echo $incomes->name . '::' . $incomes->income;
 
-        } 
+        }
     }
 
     /**

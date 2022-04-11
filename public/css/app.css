@@ -1389,6 +1389,12 @@ ol ol):not(:where([class~="not-prose"] *)) {
     position: relative;
 }
 
+.w-full-1 {
+    margin-top: 150px;
+    width: 100%;
+    position: relative;
+}
+
 .w-0 {
     width: 0px;
 }
@@ -2612,9 +2618,9 @@ ol ol):not(:where([class~="not-prose"] *)) {
 }
 
 .logo-terms {
-    margin-top: -360px;
+    margin-top: -720px;
     margin-bottom: -350px;
-    margin-left: 300px;
+    margin-left: -80px;
     max-width: 600px;
     max-height: auto;
     object-fit: contain;
@@ -2711,4 +2717,13 @@ footer {
     height: 41px;
     float: right;
     margin-right: 10px;
+}
+
+table{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+table, th, td {
+    border:1px solid black;
 }

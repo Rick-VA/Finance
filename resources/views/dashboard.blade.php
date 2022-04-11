@@ -31,7 +31,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="income">
                     <strong>&nbsp; Add your income and expenses</strong>
-                    <form action="/new" method="post">
+                    <form action="/dashboard" method="post">
                         @csrf
                         <label name="category" for="category"></label>
                         <input type="text" placeholder="name" name="name" required>
@@ -50,19 +50,28 @@
                 </div>
                 <div class="dash">
                     <div class="overview">
-                        <table>
+                        <table style="width:100%">
+
                             <tr>
                                 <th>name</th>
                                 <th>category</th>
                                 <th>amount</th>
                                 <th>date</th>
                             </tr>
+                                @foreach($incomes as $income)
+                                    <tr>
+                                        <td>{{$income->name}}</td>
+                                        <td>{{$income->category}}</td>
+                                        <td>{{$income->income}}</td>
+                                        <td>{{$income->date}}</td>
+                                    </tr>
 
+                            @endforeach
 
                         </table>
 
                     </div>
-                    <div class="graph">joo</div>
+                    <div class="graph"></div>
                 </div>
             </div>
         </div>

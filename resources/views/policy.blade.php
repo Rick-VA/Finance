@@ -2,10 +2,10 @@
     <div class="pt-4 bg-gray-100">
         <div class="min-h-screen flex flex-col items-center pt-6 sm:pt-0">
             <div>
-                <img src="images/logo finance.png" alt="logo" class="logo-terms">
+                <img src="images/logo-finance-login.png" alt="logo" class="logo-terms">
             </div>
 
-            <div class="w-full sm:max-w-2xl mt-6 p-6 bg-white shadow-md overflow-hidden sm:rounded-lg prose">
+            <div class="w-full-1 sm:max-w-2xl mt-6 p-6 bg-white shadow-md overflow-hidden sm:rounded-lg prose">
                 <h1>Privacy Policy</h1>
                 <p>Last updated: March 04, 2022</p>
                 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
