@@ -8,11 +8,8 @@ class dashboardcontroller extends Controller
 {
     public function income()
     {
-        return view('dashboard');
+//        $incomes = Auth::user()->incomes;
+//        return view('dashboard')->with(['incomes'=>$incomes]);
     }
 
-    public function store(Request $request)
-    {
-        
-    }
 }

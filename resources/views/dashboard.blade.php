@@ -48,6 +48,22 @@
 
                     </form>
                 </div>
+                <div class="dash">
+                    <div class="overview">
+                        <table>
+                            <tr>
+                                <th>name</th>
+                                <th>category</th>
+                                <th>amount</th>
+                                <th>date</th>
+                            </tr>
+
+
+                        </table>
+
+                    </div>
+                    <div class="graph">joo</div>
+                </div>
             </div>
         </div>
     </div>

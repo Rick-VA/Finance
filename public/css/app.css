@@ -2688,3 +2688,17 @@ footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
+.dash{
+    display: inline-block;
+}
+
+.overview{
+    display: inline-block;
+    width: 300px;
+}
+.graph{
+    display: inline-block;
+
+}
+

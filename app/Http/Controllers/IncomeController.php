@@ -16,9 +16,11 @@ class IncomeController extends Controller
      */
     public function index()
     {
-
-
-        //
+        $incomes = Auth::user()->incomes;
+        foreach (income::all()as $income){
+            echo $income->name;
+        }
+        return view('dashboard')->with(['incomes'=>$incomes]);
     }
 
     /**
@@ -59,7 +61,15 @@ class IncomeController extends Controller
      */
     public function show(Income $income)
     {
-        //
+        $income = Income::where('active', 1)
+            ->orderBy('updated_at')
+            ->take(10)
+            ->get();
+
+        foreach ($income as $incomes){
+            echo $incomes->name . '::' . $incomes->income;
+
+        } 
     }
 
     /**
