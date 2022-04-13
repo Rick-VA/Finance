@@ -16,7 +16,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $incomes = Auth::user()->incomes;
+
+        return view('categories')->with(['incomes'=>$incomes]);
     }
 
     /**
@@ -42,7 +44,7 @@ class CategoryController extends Controller
         $data = ['name'=>$name, 'user_id'=>$user];
         category::create($data);
 
-        return view('categories');
+        return redirect(route('categories.index'));
     }
 
     /**

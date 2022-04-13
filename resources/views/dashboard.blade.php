@@ -49,29 +49,39 @@
                     </form>
                 </div>
                 <div class="dash">
+
+                    <div class="graph"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="py-12">
+
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div class="dashboard bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     <div class="overview">
-                        <table style="width:100%">
+            <table style="width:100%">
 
-                            <tr>
-                                <th>name</th>
-                                <th>category</th>
-                                <th>amount</th>
-                                <th>date</th>
-                            </tr>
-                                @foreach($incomes as $income)
-                                    <tr>
-                                        <td>{{$income->name}}</td>
-                                        <td>{{$income->category}}</td>
-                                        <td>{{$income->income}}</td>
-                                        <td>{{$income->date}}</td>
-                                    </tr>
+                <tr>
+                    <th>name</th>
+                    <th>category</th>
+                    <th>amount</th>
+                    <th>date</th>
+                </tr>
+                @foreach($incomes as $income)
+                    <tr>
+                        <td>{{$income->name}}</td>
+                        <td>{{$income->category}}</td>
+                        <td>{{$income->income}}</td>
+                        <td>{{$income->date}}</td>
+                    </tr>
 
-                            @endforeach
+                @endforeach
 
-                        </table>
+            </table>
 
                     </div>
-                    <div class="graph"></div>
                 </div>
             </div>
         </div>

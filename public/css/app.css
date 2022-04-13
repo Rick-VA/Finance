@@ -2727,3 +2727,7 @@ table{
 table, th, td {
     border:1px solid black;
 }
+
+.dashboard{
+    width: 500px;
+}

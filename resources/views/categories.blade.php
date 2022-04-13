@@ -30,7 +30,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="category-body">
                     <strong>&nbsp;add a new category</strong>
-                    <form action="/add" method="POST">
+                    <form action="/categories" method="POST">
                         @csrf
                         <input type="text" placeholder="Name" name="name" required>
                         <input type="submit" value="&nbsp;Enter&nbsp;" class="category">
@@ -45,8 +45,20 @@
                 <div class="category-body">
                     <strong>&nbsp;add a new category</strong>
                     <input type="submit" value="&nbsp;Delete&nbsp;" class="deletebutton">
-                    </form>
                 </div>
+
+                <table>
+                    <tr>
+                        <th>You're categories</th>
+                    </tr>
+
+                    @foreach($incomes as $income)
+                        <tr>
+                            <td>{{$income->name}}</td>
+                        </tr>
+
+                    @endforeach
+                </table>
             </div>
         </div>
     </div>
