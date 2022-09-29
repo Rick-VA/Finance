@@ -61,7 +61,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="dashboard bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     <div class="overview">
-            <table style="width:100%">
+            <table style="width:140%">
 
                 <tr>
                     <th>name</th>
@@ -72,9 +72,9 @@
                 @foreach($incomes as $income)
                     <tr>
                         <td>{{$income->name}}</td>
-                        <td>{{$income->category}}</td>
+                        <td>{{$category->name}}</td>
                         <td>{{$income->income}}</td>
-                        <td>{{$income->date}}</td>
+                        <td>{{$income->date}} <form action="{{route('dashboard.destroy',$income->id)}}" method="post">@csrf @method('delete')<input type="submit" value="Delete" class="deletebutton"></form></td>
                     </tr>
 
                 @endforeach

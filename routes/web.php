@@ -17,9 +17,7 @@ Route::resource('/', \App\Http\Controllers\WelcomeController::class );
 Route::resource('/dashboard', \App\Http\Controllers\IncomeController::class);
 Route::resource('/categories', \App\Http\Controllers\CategoryController::class);
 
-//Route::get('/dashboard', function () {
-//    return view('dashboard');
-//})->middleware(['auth'])->name('dashboard');
+
 
 Route::get('/graphs', function () {
     return view('Graphs');

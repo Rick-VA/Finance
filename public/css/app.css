@@ -2707,16 +2707,16 @@ footer {
     display: inline-block;
 
 }
-.py-123{
-    /*padding-top: 3rem;*/
-    /*padding-bottom: 1rem;*/
-}
+
 .deletebutton{
     border: 1px #6b7280 solid;
     cursor: pointer;
-    height: 41px;
-    float: right;
-    margin-right: 10px;
+    margin-left: 150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 60px;
+    margin-right: 5px;
+
 }
 
 table{
@@ -2726,8 +2726,17 @@ table{
 
 table, th, td {
     border:1px solid black;
+    text-align: center;
+}
+
+.table-cat{
+
 }
 
 .dashboard{
     width: 500px;
+}
+
+.delete{
+    float: right;
 }
